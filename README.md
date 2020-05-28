@@ -1,6 +1,6 @@
-# A Tensorflow Optimizer for Deep Neural Networks 
+# A Simulated Annealing Optimizer for Deep Neural Networks 
 
-Stochastic Optimization by Simulated Annealing and Langevin Dynamics
+Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 
 
