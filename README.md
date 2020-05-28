@@ -22,6 +22,7 @@ model.compile(loss='categorical_crossentropy',
 
 
 • learning_rate is a squared timestep. Default learning_rate=0.01
+
 • beta_1 is an initial value of the momentum coefficient. Default beta_1=0.99 
 
 • beta_2 is a cooling rate, being a Simulated Annealing parameter. Calculated as beta_2=(1-beta_1)^(1/S), where S is a total number of iterations. If beta_2=1 the momentum coefficient is constant and Simulated Annealing is not applied. 
@@ -40,6 +41,7 @@ The comparison was done on CIFAR10 with ResNet, using
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss.png)
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss_mean.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
 
 
 
