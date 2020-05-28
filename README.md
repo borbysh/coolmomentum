@@ -11,8 +11,10 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 • Tensorflow
  2.x 
 
-### How to use
+### Usage
 
+
+In TensorFlow:
 ```python
 opt=Coolmomentum(learning_rate=0.01, beta_1=0.99, beta_2=0.99997)
 model.compile(loss='categorical_crossentropy',
