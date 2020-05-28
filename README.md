@@ -30,9 +30,12 @@ model.compile(loss='categorical_crossentropy',
 • beta_2 is a cooling rate, being a Simulated Annealing parameter. Calculated as beta_2=(1-beta_1)^(1/S), where S is a total number of iterations. If beta_2=1 the momentum coefficient is constant and Simulated Annealing is not applied. 
 
 
-### Comparison with Adam and Momentum optimizers 
+In PyTorch:
 
-The comparison was done on CIFAR10 with ResNet-20, using 
+
+### Comparison with Adam and Momentum optimizers on CIFAR-10 with ResNet-20 
+
+The comparison was done using 
 [this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) keras code
 
 
@@ -44,6 +47,14 @@ The comparison was done on CIFAR10 with ResNet-20, using
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss_mean.png)
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
+
+### Comparison with SGD optimizer on the Penn Treebank dataset with LSTM 
+
+The comparison was done using 
+[this](https://github.com/salesforce/awd-lstm-lm) code
+
+
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Figure_LSTM.png)
 
 
 
