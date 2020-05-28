@@ -30,7 +30,7 @@ model.compile(loss='categorical_crossentropy',
 
 ### Comparison with Adam and Momentum optimizers 
 
-The comparison was done on CIFAR10 with ResNet, using 
+The comparison was done on CIFAR10 with ResNet-20, using 
 [this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) keras code
 
 
