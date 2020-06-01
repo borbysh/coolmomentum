@@ -11,10 +11,10 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 ### Requirements
 
 
-• Python (3 or higher)
+â€¢ Python (3 or higher)
 
 
-• Pytorch or Tensorflow 2.x 
+â€¢ Pytorch or Tensorflow 2.x 
 
 
 
@@ -24,7 +24,8 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 In TensorFlow:
 
-```pythonfrom coolmomentum_tf import Coolmomentum                           
+```python
+from coolmomentum_tf import Coolmomentum                           
 opt=Coolmomentum(learning_rate=0.01, rho_0=0.99, alpha=0.99997)
 model.compile(loss='categorical_crossentropy',
               optimizer=opt,
@@ -33,10 +34,11 @@ model.compile(loss='categorical_crossentropy',
 
 
 
-• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.                   
-• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.                   
-• alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S),             where S is a total number of iterations. 
-If alpha=1 the momentum coefficient is constant and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.   
+â€¢ learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.                   
+â€¢ rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.                   
+â€¢ alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S), 
+  where S is a total number of iterations. If alpha=1 the momentum coefficient is constant 
+  and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.   
 
 
 
@@ -46,7 +48,7 @@ If alpha=1 the momentum coefficient is constant and Simulated Annealing is not a
 
 
 The comparison was done using 
-[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) keras code
+[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras code
 
 
 
@@ -79,7 +81,8 @@ For the honest comparison of SGD and CoolMomemtum the ASGD optimizer was not use
 SGD was replaced by CoolMomentum with commands
 
 ```python
-from coolmom_pytorch import SGD		optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
+from coolmom_pytorch import SGD		
+optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
 ```
 
 
