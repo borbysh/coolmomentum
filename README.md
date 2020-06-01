@@ -33,13 +33,8 @@ model.compile(loss='categorical_crossentropy',
 
 
 
-• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01
-
-.
-
-• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99
-.
-
+• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.
+• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.
 • alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S), where S is a total number of iterations. 
 If alpha=1 the momentum coefficient is constant and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.
 
