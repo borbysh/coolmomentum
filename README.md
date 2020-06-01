@@ -24,7 +24,7 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 In TensorFlow:
 
-```pythonfrom coolmomentum_tf import Coolmomentum                           
+```python from coolmomentum_tf import Coolmomentum                           
 opt=Coolmomentum(learning_rate=0.01, rho_0=0.99, alpha=0.99997)
 model.compile(loss='categorical_crossentropy',
               optimizer=opt,
