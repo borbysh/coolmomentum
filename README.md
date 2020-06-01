@@ -79,7 +79,7 @@ For the honest comparison of SGD and CoolMomemtum the ASGD optimizer was not use
 SGD was replaced by CoolMomentum with commands
 
 ```python
-from coolmom_pytorch import SGDoptimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
+from coolmom_pytorch import SGD	optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
 ```
 
 
