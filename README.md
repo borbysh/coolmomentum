@@ -42,9 +42,9 @@ model.compile(loss='categorical_crossentropy',
 The comparison was done by modification of 
 [this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras code and running
 
-python resnet_adam.py       
-python resnet_momentum.py      
-python resnet_cool.py       
+• python resnet_adam.py       
+• python resnet_momentum.py      
+• python resnet_cool.py       
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
 
