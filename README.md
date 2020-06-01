@@ -24,7 +24,7 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 In TensorFlow:
 
-```python
+```pythonfrom coolmomentum_tf import Coolmomentum                           
 opt=Coolmomentum(learning_rate=0.01, rho_0=0.99, alpha=0.99997)
 model.compile(loss='categorical_crossentropy',
               optimizer=opt,
@@ -33,9 +33,9 @@ model.compile(loss='categorical_crossentropy',
 
 
 
-• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.    
-• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.   
-• alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S), where S is a total number of iterations. 
+• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.                   
+• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.                   
+• alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S),             where S is a total number of iterations. 
 If alpha=1 the momentum coefficient is constant and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.   
 
 
@@ -80,7 +80,7 @@ SGD was replaced by CoolMomentum with commands
 
 ```python
 from coolmom_pytorch import SGD
-optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
+                 optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0.9999998018)
 ```
 
 
