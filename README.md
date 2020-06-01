@@ -1,15 +1,9 @@
 # A Simulated Annealing Optimizer for Deep Neural Networks 
 
-
-
 Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 
-
-
-
 ### Requirements
-
 
 • Python (3 or higher)
 
@@ -17,10 +11,7 @@ Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 • Pytorch or Tensorflow 2.x 
 
 
-
 ### Usage
-
-
 
 In TensorFlow:
 
@@ -48,19 +39,16 @@ model.compile(loss='categorical_crossentropy',
 
 
 The comparison was done by modification of 
-[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras code by running
+[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras code and running
 
 python resnet_adam.py       
 python resnet_momentum.py      
 python resnet_cool.py       
 
-
-
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
 
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
-
 
 
 ### Comparison with SGD optimizer on the Penn Treebank dataset with LSTM 
@@ -69,14 +57,11 @@ python resnet_cool.py
 In PyTorch:
 
 
-
 The comparison was done using 
 [this](https://github.com/salesforce/awd-lstm-lm) code, by running
 
 
-
 python main.py --batch_size 20 --data data/penn --dropouti 0.4 --dropouth 0.25 --seed 141 --epoch 500 
-
 
 
 For the honest comparison of SGD and CoolMomemtum the ASGD optimizer was not used.
