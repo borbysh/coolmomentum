@@ -1,6 +1,7 @@
 # A Simulated Annealing Optimizer for Deep Neural Networks 
 
-Stochastic Optimization by Langevin Dynamics with Simulated Annealing
+
+## Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
 
 ### Requirements
