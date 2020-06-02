@@ -1,4 +1,4 @@
-# A Simulated Annealing Optimizer for Deep Neural Networks 
+# CoolMomentum Optimizer for Deep Neural Networks 
 
 
 ## Stochastic Optimization by Langevin Dynamics with Simulated Annealing
