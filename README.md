@@ -48,7 +48,8 @@ The comparison was done by modification of
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
 
-  Temperature
+ Temperature
+ 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
 
 
