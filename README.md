@@ -40,7 +40,7 @@ model.compile(loss='categorical_crossentropy',
 
 
 The comparison was done by modification of 
-[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras code and running
+[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras example and running
 
 • python resnet_adam.py       
 • python resnet_momentum.py      
@@ -48,7 +48,7 @@ The comparison was done by modification of
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
 
-
+### Temperature
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
 
 
