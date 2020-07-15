@@ -82,7 +82,7 @@ optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0
 
 
 
-
+### References: 
 
 Kirkpatrick, Scott, C. Daniel Gelatt, and Mario P. Vecchi. "Optimization by simulated annealing." Science 220.4598 (1983): 671-680.
 
