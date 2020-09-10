@@ -47,6 +47,7 @@ The comparison was done by modification of
 • python resnet_cool.py       
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss.png)
 
  Rescaled temperature:
  
