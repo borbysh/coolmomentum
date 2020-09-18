@@ -3,8 +3,7 @@
 
 ## Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
-This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing]
-(https://arxiv.org/pdf/2005.14605.pdf) 
+This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing](https://arxiv.org/pdf/2005.14605.pdf) 
 in TensorFlow and PyTorch.
 
 ### Requirements
