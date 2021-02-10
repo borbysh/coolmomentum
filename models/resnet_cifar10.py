@@ -1,4 +1,5 @@
 """
+Code copied from https://github.com/ifeherva/optimizer-benchmark/blob/master/models/resnet_cifar10.py
 .. Deep Residual Learning for Image Recognition:
     https://arxiv.org/abs/1512.03385
     These models are modified for CIFAR10
