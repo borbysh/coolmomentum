@@ -11,10 +11,11 @@ The benchmarking was done by modification of
 
 • python train_cifar10.py       
 
-The results obtained are compared against those for [other popular optimizers](https://app.wandb.ai/ifeherva/optimizer-evaluation):
+The results obtained are compared against those calculated by Istvan Fehervari for [other popular optimizers](https://app.wandb.ai/ifeherva/optimizer-evaluation):
 
-![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
-![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss.png)
+![Train Loss](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_a.png)
+![Train accuracy](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_b.png)
+![Test accuracy](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_c.png)
 <!---
 This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing](https://arxiv.org/pdf/2005.14605.pdf) in TensorFlow and PyTorch.
 -->
