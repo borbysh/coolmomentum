@@ -7,7 +7,7 @@
 Requirements: Python 3.6+, Pytorch 1.3+, tqdm
 
 The benchmarking was done by modification of 
-[this](https://github.com/ifeherva/optimizer-benchmark/blob/master/train_cifar10.py) code and running
+[this](https://github.com/ifeherva/optimizer-benchmark/blob/master/train_cifar10.py) code Istvan Fehervari and running:
 
 • python train_cifar10.py       
 
