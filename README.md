@@ -2,6 +2,19 @@
 
 
 ## Stochastic Optimization by Langevin Dynamics with Simulated Annealing
+
+### Benchmarking Coolmomentum on CIFAR-10 with ResNet-34 
+Requirements: Python 3.6+, Pytorch 1.3+, tqdm
+
+The benchmarking was done by modification of 
+[this](https://github.com/ifeherva/optimizer-benchmark/blob/master/train_cifar10.py) code and running
+
+• python train_cifar10.py       
+
+The results obtained are compared against those for [other popular optimizers](https://app.wandb.ai/ifeherva/optimizer-evaluation):
+
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss.png)
 <!---
 This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing](https://arxiv.org/pdf/2005.14605.pdf) in TensorFlow and PyTorch.
 -->
