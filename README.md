@@ -31,7 +31,9 @@ python3 main_cool.py \
   --train_batch_size=2048 \
   --train_steps=218948
 
-The result obtained is compared to that of the original [code](https://cloud.google.com/tpu/docs/tutorials/efficientnet) by Tensorflow Team
+The result obtained is compared to that of the original [code](https://cloud.google.com/tpu/docs/tutorials/efficientnet) by Tensorflow Team:
+
+![Top accuracies](https://github.com/borbysh/coolmomentum/blob/master/Figure_2.png)
 
 
 <!---
