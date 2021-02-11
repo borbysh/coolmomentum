@@ -16,6 +16,24 @@ The results obtained are compared against those calculated by Istvan Fehervari f
 ![Train Loss](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_a.png)
 ![Train accuracy](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_b.png)
 ![Test accuracy](https://github.com/borbysh/coolmomentum/blob/master/Figure_1_c.png)
+
+### Benchmarking Coolmomentum on Imagenet with Efficientnet-B0 
+
+The benchmarking was done by modification of 
+[this](https://cloud.google.com/tpu/docs/tutorials/efficientnet) code by Tensorflow Team and running:
+
+python3 main_cool.py \
+  --tpu=${TPU_NAME} \
+  --data_dir=${DATA_DIR} \
+  --model_dir=${MODEL_DIR} \
+  --model_name='efficientnet-b0' \
+  --skip_host_call=true \
+  --train_batch_size=2048 \
+  --train_steps=218948
+
+The result obtained is compared to that of the original [code](https://cloud.google.com/tpu/docs/tutorials/efficientnet) by Tensorflow Team
+
+
 <!---
 This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing](https://arxiv.org/pdf/2005.14605.pdf) in TensorFlow and PyTorch.
 -->
