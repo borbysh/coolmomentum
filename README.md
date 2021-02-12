@@ -59,22 +59,11 @@ The result obtained is compared to that of the original [code](https://cloud.goo
 <!---
 This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing]() in TensorFlow and PyTorch.
 -->
-### Requirements
-
-• Python (3 or higher)
-
-
-• Pytorch or Tensorflow 2.x 
-
-
-
-
-
 
 
 
 ### Comparison with Adam and Momentum optimizers on CIFAR-10 with ResNet-20 
-
+Requirements: Python 3.6+, Tensorflow 2.x
 
 The comparison was done by modification of 
 [this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras example and running
@@ -92,7 +81,7 @@ The comparison was done by modification of
 
 
 ### Comparison with SGD optimizer on the Penn Treebank dataset with LSTM 
-
+Requirements: Python 3.6+, Pytorch 1.3+
 
 In PyTorch:
 
