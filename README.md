@@ -3,6 +3,26 @@
 
 ## Stochastic Optimization by Langevin Dynamics with Simulated Annealing
 
+### Usage
+
+In TensorFlow:
+
+```python
+from coolmomentum_tf import Coolmomentum                           
+opt=Coolmomentum(learning_rate=0.01, rho_0=0.99, alpha=0.99997)
+model.compile(loss='categorical_crossentropy',
+              optimizer=opt,
+              metrics=['accuracy'])
+```
+
+
+
+• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.                   
+• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.                   
+• alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S), 
+  where S is a total number of iterations. If alpha=1 the momentum coefficient is constant 
+  and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.   
+
 ### Benchmarking Coolmomentum on CIFAR-10 with ResNet-34 
 Requirements: Python 3.6+, Pytorch 1.3+, tqdm
 
@@ -37,7 +57,7 @@ The result obtained is compared to that of the original [code](https://cloud.goo
 
 
 <!---
-This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing](https://arxiv.org/pdf/2005.14605.pdf) in TensorFlow and PyTorch.
+This repository contains implementations for [CoolMomentum: A Method for Stochastic Optimization by Langevin Dynamics with Simulated Annealing]() in TensorFlow and PyTorch.
 -->
 ### Requirements
 
@@ -47,25 +67,7 @@ This repository contains implementations for [CoolMomentum: A Method for Stochas
 • Pytorch or Tensorflow 2.x 
 
 
-### Usage
 
-In TensorFlow:
-
-```python
-from coolmomentum_tf import Coolmomentum                           
-opt=Coolmomentum(learning_rate=0.01, rho_0=0.99, alpha=0.99997)
-model.compile(loss='categorical_crossentropy',
-              optimizer=opt,
-              metrics=['accuracy'])
-```
-
-
-
-• learning_rate is a squared timestep "dt^2". Default learning_rate=0.01.                   
-• rho_0 is an initial value of the momentum coefficient. Default rho_0=0.99.                   
-• alpha is a cooling rate, being a Simulated Annealing parameter. Calculated as alpha=(1-rho_0)^(1/S), 
-  where S is a total number of iterations. If alpha=1 the momentum coefficient is constant 
-  and Simulated Annealing is not applied. Then the optimizer behaves like simple Momentum.   
 
 
 
