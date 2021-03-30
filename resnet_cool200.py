@@ -57,10 +57,10 @@ epochs = 200
 data_augmentation = True
 num_classes = 10
 
-learning_rate = 0.001 #squared timestep dt^2
-rho_0 = 0.9 #initial momentum coefficient rho_0
+learning_rate = 0.01 #squared timestep dt^2
+rho_0 = 0.99 #initial momentum coefficient rho_0
 
-filename = "cout_loss(lr=0.001;rho0=0.9;fixed_seed).mom200"
+filename = "cout_loss(lr=0.01;rho0=0.99;fixed_seed).mom200"
 
 # Subtracting pixel mean improves accuracy
 subtract_pixel_mean = True
