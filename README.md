@@ -62,22 +62,22 @@ This repository contains implementations for [CoolMomentum: A Method for Stochas
 
 
 
-### Comparison with Adam and Momentum optimizers on CIFAR-10 with ResNet-20 
+### Comparison with Adam and SGD optimizers on CIFAR-10 with ResNet-20 
 Requirements: Python 3.6+, Tensorflow 2.x
 
 The comparison was done by modification of 
-[this](https://github.com/keras-team/keras/blob/master/examples/cifar10_resnet.py) Keras example and running
+[this](https://keras.io/zh/examples/cifar10_resnet/) Keras example and running
 
-• python resnet_adam.py       
-• python resnet_momentum.py      
-• python resnet_cool.py       
+• python resnet_adam200.py       
+• python resnet_sgd200.py      
+• python resnet_cool200.py       
 
-![Training results](https://github.com/borbysh/coolmomentum/blob/master/Train_loss.png)
-![Training results](https://github.com/borbysh/coolmomentum/blob/master/Test_loss.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Fig_1_a.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Fig_1_b.png)
 
  Rescaled temperature:
  
-![Training results](https://github.com/borbysh/coolmomentum/blob/master/Temperature.png)
+![Training results](https://github.com/borbysh/coolmomentum/blob/master/Fig_1_c.png)
 
 
 ### Comparison with SGD optimizer on the Penn Treebank dataset with LSTM 
