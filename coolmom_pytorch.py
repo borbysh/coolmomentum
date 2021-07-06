@@ -39,6 +39,7 @@ class SGD(Optimizer):
                     d_p = d_p.add(p, alpha=weight_decay)
                 param_state = self.state[p]
                 if 'momentum_buffer' not in param_state:
+                    buf = param_state['momentum_buffer'] = torch.clone(d_p).detach()
                     buf *= 0
                 else:
                     buf = param_state['momentum_buffer']
