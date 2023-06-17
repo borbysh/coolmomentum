@@ -15,7 +15,8 @@ from tensorflow.python.util.tf_export import keras_export
 import math
 
 
-class Coolmomentum(optimizer_v2.OptimizerV2):
+#class Coolmomentum(optimizer_v2.OptimizerV2):
+class Coolmomentum(tf.keras.optimizers.legacy.Optimizer):
   """Optimizer that implements the Coolmomentum algorithm."""
 
   def __init__(self,
