@@ -7,6 +7,8 @@ import math
 
 
 from .coolmom_pytorch import Coolmomentum
+from .coolmomentum import Coolmom
+
 
 __all__ = ['parse_optimizer', 'supported_optimizers']
 
@@ -16,6 +18,13 @@ optimizer_defaults = {
         'momentum': 0.99,
         'weight_decay': 5e-4,
         'beta': (1 - 0.99)**(1/(200*math.ceil(50000/128))),
+        'dropout': 0.0,
+    }),
+    'coolmom': (Coolmom, 'Coolmom', {
+        'lr': 0.01,
+        'rho_0': 0.99,
+        'weight_decay': 5e-4,
+        'cool_steps': 87975,
         'dropout': 0.0,
     })
 }
