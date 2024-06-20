@@ -1,7 +1,7 @@
 import torch
 from torch.optim.optimizer import Optimizer, required
 
-class Coolmom(Optimizer):
+class Coollin(Optimizer):
     """
         lr (float): learning rate
         momentum (float, optional): initinal momentum constant (0 for SGD)
@@ -13,7 +13,7 @@ class Coolmom(Optimizer):
                  weight_decay=0.0, dropout=0.0):
 
         defaults = dict(lr=lr, rho_0=rho_0, cool_steps=cool_steps, weight_decay=weight_decay, dropout=dropout)
-        super(Coolmom, self).__init__(params, defaults)
+        super(Coollin, self).__init__(params, defaults)
         self.T = 0.0
         self.number = 0
         self.epoch = None
@@ -24,7 +24,7 @@ class Coolmom(Optimizer):
  
 
     def __setstate__(self, state):
-        super(Coolmom, self).__setstate__(state)
+        super(Coollin, self).__setstate__(state)
 
     @torch.no_grad()
     def step(self, closure=None):
@@ -58,7 +58,7 @@ class Coolmom(Optimizer):
                 cool_steps = group['cool_steps']
                 i = state['step']
                 
-                self.rho = rho_0 * (1 - i/cool_steps) / (1 - rho_0 * i/cool_steps)
+                self.rho = rho_0 * (1 - i/cool_steps) / abs(1 - rho_0 * i/cool_steps)
                 self.rho = max(self.rho, 0)
                 lr_dropout = group['lr']*(1+self.rho)/2 # lrn instead of lr
                 #lr_dropout = lr_dropout * mask
