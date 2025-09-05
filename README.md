@@ -108,6 +108,10 @@ optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0
 
 ![Training results](https://github.com/borbysh/coolmomentum/blob/master/Figure_LSTM.png)
 
+### Comparison of the linear and exponential cooling schedules
+
+In this section we compare two variants of Coolmomentum algorithms with [linear](optimizers/cool_lin.py) and [exponential](optimizers/coolmomentum.py) cooling shedules.
+
 
 
 ### References: 
@@ -118,3 +122,4 @@ Kirkpatrick, Scott, C. Daniel Gelatt, and Mario P. Vecchi. "Optimization by simu
 
 
 Ma, Y. A., Chen, Y., Jin, C., Flammarion, N., & Jordan, M. I. "Sampling can be faster than optimization". Proceedings of the National Academy of Sciences, 116 (2019) 20881-20885.
+
