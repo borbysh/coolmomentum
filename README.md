@@ -110,11 +110,12 @@ optimizer = SGD(params, lr=0.1, momentum=0.99,  weight_decay=args.wdecay, beta=0
 
 ### Comparison of the linear and exponential cooling schedules
 
-In this section we compare two variants of Coolmomentum algorithms with [linear](optimizers/cool_lin.py) and [exponential](optimizers/coolmomentum.py) cooling shedules by training ResNet-34 on the Cifar-10 dataset and applying simulated annealing for 50 (red circles) and 100 (blue triangles) epochs. 
+In this section we compare two variants of Coolmomentum algorithm with [linear](optimizers/cool_lin.py) and [exponential](optimizers/coolmomentum.py) cooling shedules by training ResNet-34 on the Cifar-10 dataset and applying simulated annealing for 50 (red circles) and 100 (blue triangles) epochs. 
+Here we don't demonstrate results of the initial training epochs.
 
 ![Training results](lin_vs_exp.png)
 
-One can see that the linear (filled symbols) cooling regime demonstrates slower convergence, but gives a better final result, compared to the exponential (open symbols) one.
+One can see that the linear (filled symbols) cooling regime demonstrates slower convergence, but gives a better final result, compared to the exponential (open symbols) one. This advantage of the linear cooling schedule is more pronounced for 50 training epochs than for 100.
 
 
 
@@ -126,5 +127,6 @@ Kirkpatrick, Scott, C. Daniel Gelatt, and Mario P. Vecchi. "Optimization by simu
 
 
 Ma, Y. A., Chen, Y., Jin, C., Flammarion, N., & Jordan, M. I. "Sampling can be faster than optimization". Proceedings of the National Academy of Sciences, 116 (2019) 20881-20885.
+
 
 
