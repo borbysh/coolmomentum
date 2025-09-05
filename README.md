@@ -115,7 +115,7 @@ Here we don't demonstrate results of the initial training epochs.
 
 ![Training results](lin_vs_exp.png)
 
-One can see that the linear (filled symbols) cooling regime demonstrates slower convergence, but gives a better final result, compared to the exponential (open symbols) one. This advantage of the linear cooling schedule is more pronounced for 50 training epochs than for 100.
+One can see that the linear (filled symbols) cooling regime demonstrates slower convergence, but gives a better final result, compared to the exponential (open symbols) one. This advantage of the linear cooling schedule is more pronounced for 50 cooling epochs than for 100.
 
 
 
@@ -127,6 +127,7 @@ Kirkpatrick, Scott, C. Daniel Gelatt, and Mario P. Vecchi. "Optimization by simu
 
 
 Ma, Y. A., Chen, Y., Jin, C., Flammarion, N., & Jordan, M. I. "Sampling can be faster than optimization". Proceedings of the National Academy of Sciences, 116 (2019) 20881-20885.
+
 
 
 
